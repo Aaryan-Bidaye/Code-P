@@ -10,11 +10,11 @@ def applyTax(cost, percentTaxed):
     cost = cost * multiplyer
     return(cost)
 Total = applyTax(applyDiscount(
-                    itemPrice=int(input("Price of Item: ")),
-                    percentDiscounted= int(input("Discount Percent: ")
+                    itemPrice=float(input("Price of Item: ")),
+                    percentDiscounted= float(input("Discount Percent: ")
                 )
             ),
             percentTaxed= float(input("Tax: "))
         )
-print("Your Total is: $"+Total)
+print("Your Total is: $"+str(Total))
 
